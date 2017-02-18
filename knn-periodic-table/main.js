@@ -23,7 +23,7 @@ function post(url, params, callback) {
 }
 
 // Downloads and assings the data set.
-post("periodic-table.json", null, response => elements = JSON.parse(response));
+post("https://tritiummonoid.github.io/knn-periodic-table/periodic-table.json", null, response => elements = JSON.parse(response));
 elements.forEach(e => divElements.appendChild(createElementDiv(e)));
 
 // Makes a prediction using the K-NN algorithm.
