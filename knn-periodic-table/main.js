@@ -13,7 +13,7 @@ var divElement      = document.getElementById("divElement");
 function post(url, params, callback) {
     var http = new XMLHttpRequest();
     http.open("POST", url, false);
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.onreadystatechange = function() {
         if(http.readyState == 4 && http.status == 200) {
           callback(http.responseText);
