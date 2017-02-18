@@ -128,7 +128,7 @@ var divElements     = document.getElementById("divElements");
 var divPrediction   = document.getElementById("divPrediction");
 var divElement      = document.getElementById("divElement");
 
-Assings the data set.
+// Assings the data set.
 elements.forEach(e => divElements.appendChild(createElementDiv(e)));
 
 // Makes a prediction using the K-NN algorithm.
