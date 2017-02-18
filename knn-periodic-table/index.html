@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KNN Periodic table</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="header">
+      <input id="txtAtomicNumber" type="text" placeholder="Atomic number" autofocus=""/>
+      <span class="headerLabel">K </span>
+      <select id="selK">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <span class="headerLabel"> Data </span>
+      <select id="selData">
+          <option value="3">All</option>
+          <option value="2">Some</option>
+          <option value="1">Few</option>
+      </select>
+      <input type="submit" value="Predict properties" onclick="predict()"/>
+    </div>
+    <div id="contents">
+      <div id="divPrediction"></div>
+      <div id="divElements"></div>
+    </div>
+    <div id="divElement" hidden="">
+      <div><span class="property">Atomic number: </span><span></span></div>
+      <div><span class="property">Symbol: </span><span></span></div>
+      <div><span class="property">Name: </span><span></span></div>
+      <div><span class="property">Block: </span><span></span></div>
+      <div><span class="property">Group: </span><span></span></div>
+      <div><span class="property">Period: </span><span></span></div>
+      <div><span class="property">Relative atomic mass: </span><span></span></div>
+      <div><span class="property">State at 20°C: </span><span></span></div>
+      <div><span class="property">Density (g cm−3): </span><span></span></div>
+      <div>
+        <span class="property">Boiling point: </span>
+        <div>
+          <li><span class="property">C: </span><span></span></li>
+          <li><span class="property">F: </span><span></span></li>
+          <li><span class="property">K: </span><span></span></li>
+        </div>
+      </div>
+      <div>
+        <span class="property">Melting point: </span>
+        <div>
+          <li><span class="property">C: </span><span></span></li>
+          <li><span class="property">F: </span><span></span></li>
+          <li><span class="property">K: </span><span></span></li>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
